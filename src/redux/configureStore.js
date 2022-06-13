@@ -2,13 +2,13 @@ import { applyMiddleware, combineReducers, createStore } from 'redux';
 import thunk from 'redux-thunk';
 import { persistReducer, persistStore } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-// import authReducer from './auth';
+import authReducer from './auth';
 
 const reducer = combineReducers({
   // roomsReducer,
   // reservationsReducer,
   // setIdReducer,
-  // auth: authReducer,
+  auth: authReducer,
 });
 
 const persistConfig = {
